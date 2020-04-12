@@ -2,14 +2,14 @@ version: "3"
 services:
 
   oj-redis:
-    image: dockerhub.azk8s.cn/library/redis:4.0-alpine
+    image: hub.c.163.com/library/redis:4.0-alpine
     container_name: oj-redis
     restart: always
     volumes:
       - ./data/redis:/data
   
   oj-postgres:
-    image: dockerhub.azk8s.cn/library/postgres:10-alpine
+    image: hub.c.163.com/library/postgres:10-alpine
     container_name: oj-postgres
     restart: always
     volumes:
